@@ -1,0 +1,32 @@
+nav {
+	background-color: black;
+	color: white;
+}
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu li {
+	width: 10%;
+	list-style: none;
+}
+.menu a {
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-decoration: none;
+	/* transition: all 100ms ease; */
+}
+.menu a:hover {
+	background-color: white;
+	border: 5px white solid;
+	border-radius: 3px;
+	color: black;
+}
+.logo {
+	flex-grow: 3;
+	background-color: black;
+}
+.logo img {
+	width: 15%;
+	height: auto;
+}

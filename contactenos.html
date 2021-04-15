@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Gloria Elena Beltrán Gutierrez">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+<body>
+    <nav>
+		<ul class="menu">
+			<li class="logo">
+				<a href="#">
+					<img src="./img/logo.png">
+				</a>
+			</li>
+			<li><a href="/">Inicio</a></li>
+			<li><a href="./contactenos.html">Contacto</a></li>
+		</ul>
+	</nav>
+
+    <div>
+        <h1>Contacto con Rick and Morty </h1>
+
+        <div>
+            <form>
+                <div>
+                    <div>
+                        <div>
+                            <label> Tipo de Mensaje</label>
+                        </div>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Seleccione una opción </option>
+                            <option value="cotizacion"> Cotización </option>
+                            <option value="saludo"> Saludo </option>
+                            <option value="queja"> Queja </option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label> Nombres</label>
+                        </div>
+                        <input type="text" id="name" name="name" placeholder="Ingrese sus nombres" required>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label>Email</label>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label> Edad</label>
+                        </div>
+                        <input type="number" id="edad" name="edad" placeholder="Ingrese su edad" required>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label> Télefono</label>
+                        </div>
+                        <input type="text" id="telefono" name="telefono" placeholder="Ingrese su telefono" required>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label> Comentarios</label>
+                        </div>
+                        <textarea id="comment" name="comment" cols="40" rows="4" placeholder="escriba su comentario aqui" required> 
+                        </textarea>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label> ¿Que estudias? </label>
+                        </div>
+                        <input type="checkbox" id="chk1" name="chk1" value="html"> HTML
+                        <input type="checkbox" id="chk2" name="chk2" value="css"> CSS 
+                        <input type="checkbox" id="chk3" name="chk3" value="php"> PHP 
+                        
+
+                    </div>
+
+                    <div>
+                        <div>
+                            <label> ¿Que te gusta hacer? </label>
+                        </div>
+                        <input type="radio" id="radio1" name="radio" value="jugar"> Jugar
+                        <input type="radio" id="radio2" name="radio" value="vertv"> Ver Tv
+                        <input type="radio" id="radio3" name="radio" value="programar"> Programar
+                        
+
+                    </div> 
+
+                    <div>
+                        <button type="submit" onclick="validardatos()"> Enviar Datos </button>
+                    </div>
+                
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+		<p> Creado por Gloria Beltrán</p>
+	</footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
